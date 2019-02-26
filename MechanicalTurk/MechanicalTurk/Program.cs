@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace MechanicalTurk
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Session session = new Session();
+            session.SetUpSession();
+            session.RunSession();
+            Console.Read();
         }
     }
 }
