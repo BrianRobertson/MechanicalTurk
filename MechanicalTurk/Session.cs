@@ -12,7 +12,7 @@ namespace MechanicalTurk
         private User user2 = new User();
         public void SetUpSession()
         {
-            Console.WriteLine("Hello World! \nMy name is Mechanical Turk");
+            UserInterface.DisplayWelcome();
             user1.SetName();
         }
         public void RunSession()
