@@ -14,6 +14,7 @@ namespace MechanicalTurk
         {
             UserInterface.DisplayWelcome();
             user1.SetName();
+            SetMode();
         }
         public void RunSession()
         {
@@ -21,6 +22,12 @@ namespace MechanicalTurk
             Console.WriteLine(user1.name + ", What are your thoughts on what to do next? Type them here please.");
             string playerThoughts = Console.ReadLine();
             Console.WriteLine("Your thoughts about " + playerThoughts + " seem good to me.");
+        }
+        public void SetMode()
+        {
+            UserInterface.DisplayMainMenu();
+            string mode = Console.ReadLine();
+            Console.WriteLine("You chose mode " + mode + ".");
         }
     }
 }
